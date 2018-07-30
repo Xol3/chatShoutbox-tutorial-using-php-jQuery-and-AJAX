@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- link up the css file to this main HTML-->
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <!-- link up the css file to this main jQuery-->
+    <script scr="js/jQuery.js" type="text/javascript">
+    </script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Chat Box Baby</title>
   </head>
+    <!-- main body of html where the chat whole box will be in -->
   <body>
-
+    <h1>Chat tuto.</h1>
+  <!-- set clases for the user and chatBox -->
+      <div class="chatBox">
+      <div class="user">
+        <form name="signIn" action="" onsubmit="return false">
+          <span class="error">Aguas con los nombres</span>
+            <!-- set config for the input from the user -->
+          <input type="text" size="14px" name="username" id="username" value="enter username" onclick='document.signIn.username.value = ""' />
+          <input type="submit" id="signIn" value="SIGN IN">
+        </form>
+      </div>
+        <!-- -->
+      <div class="main">
+          <p>administrator: hello, msgs here</p>
+        </div>
+        <div class="messageBox">
+          <form name="messageBoxSignInForm" id="messageBoxSignInForm" onsubmit="return false">
+            <!-- this is the "signIn to the enter chat" button  -->
+            <input type="submit" id="messageBoxSignIn" value="Sign in to enter chat"/>
+          </form>
+          <form name="newMessage" class="newMessage" action="" onsubmit="return false">
+            <div class="left">
+              <textarea name="newMessageContent" id="newMessageContent">Escribele Aqui
+              </textarea>
+            </div>
+            <div class="right">
+              <!-- this is the send button  -->
+              <input type="submit" id="newMessageSend" value="SEND">
+            </div>
+          </form>
+      </div>
+    </div>
+    <script src="js/signInOut.js" type="text/javascript">
+    </script>
   </body>
 </html>

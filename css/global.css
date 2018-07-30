@@ -1,0 +1,86 @@
+/* general */
+{
+  padding: 0;
+  margin: : 0;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,form,fieldset,blockquote,var{
+  padding:0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+h1{font-size: 24px;}
+h2{font-size: 22px;}
+h3{font-size: 20px;}
+h4{font-size: 18px;}
+h5{font-size: 16px;}
+h6{font-size: 14px;}
+
+table{border-collapse: collapse; border-spacing: 0;}
+td,th,caption{font-weight: normal; text-align: left;}
+img,fieldset{border: 0;}
+ol{list-style: decimal;}
+ul{list-style: square; }
+
+/* chatBox */
+.chatBox{
+  border: 1px solid#000;
+  width: 800px;
+  margin: 50px;
+  background-color: rgb(100,255,0);
+}
+.chatBox.user{
+  text-align: right;
+  padding: 5px
+}
+/* make the sign in look like html */
+.user input#signIn{
+  color: blue;
+  text-decoration: none;;
+  background: none;
+  border: none;
+}
+/* when we on top of the sing in underline it */
+.user input#signIn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.user input{
+  color: rgb(255,0,0);
+  margin-right: 5px;
+}
+
+/* message log area */
+.chatBox .main{
+  background-color: #fff;
+  height: 300px;
+  padding: 5px;
+  overflow: auto;
+}
+
+/* new message area */
+.chatBox.messageBox{
+  padding-left: 7px 5px 5px 5px;
+}
+#newMessageContent{
+  font: 14px arial, sans-serif;
+  width: 400px;
+  height: 42px;
+}
+/* send message button */
+#newMessageSend{
+  float: right;
+  height: 36px;
+  width: 80px;
+}
+.chatBox.messageBox.left{
+  /*   float: left; */
+  width: 410px;
+}
+#messageBoxSignIn{
+  padding; 8px;
+  width: 100%;
+}
